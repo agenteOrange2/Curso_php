@@ -128,3 +128,53 @@ echo "<br/>";
   $apellidos = "Alderson";
 
   echo "$nombre y $apellidos";
+
+  echo "<br/>";
+  //Combinando strings
+
+  $nombre = $nombre . " - " . $apellidos;
+  echo $nombre;
+  
+  echo "<br/>";
+
+  //Escapar caracteres con contra barra o backslash
+
+  $nombre3 = "Ejemplo de caracter \"especial\"";
+  echo $nombre3;
+
+  echo "<br/>";
+
+  //Introduccion a los metodos para operaciones con string, obtener la longitud de un string strlen
+
+  $nombre4 = "Elliot Alderson";
+  echo strlen($nombre4);
+
+  //null
+
+  echo "<br/>";
+  echo "---------NULL---------";
+  echo "<br/>";
+
+  /* 
+  Null no es case sensitive  NULL/null
+  -Es usualmente usado para inicializar una variable con un  valor vacio
+  -Usa metodos como unset y is_null
+  */
+
+  //Definir nulo
+  $documento = null;
+  echo $documento;
+  echo($documento) ? " / Contiene valor" : " Sin valor";
+  echo "<br/>";
+
+  //Metodo is_null
+
+  echo $documento = null;
+  echo(!is_null($documento)) ? " / Contiene valor" : "Sin valor";
+  echo "<br/>";
+
+  //Borrar la variable del programa y memoria con unset()
+  unset($documento);
+  echo(!is_null($documento)) ? " / Contiene valor" : "Sin valor";
+  echo "<br/>";
+
