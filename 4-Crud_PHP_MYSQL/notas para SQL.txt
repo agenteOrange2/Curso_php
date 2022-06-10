@@ -1,0 +1,41 @@
+
+
+
+como mandar a llamar a todos 
+
+//select manda a llamar a todos la tabla familia con excepcion de titulo
+select nombre, telefono, email, titulo
+//from extra
+from personas inner join categorias
+//en esta linea personas.categoria_id=categorias.id se unen las 2 tablas
+on personas.categoria_id=categorias.id
+where titulo="familia";
+
+
+//que solo traiga de familia 
+
+select nombre, telefono, email, titulo
+from personas inner join categorias
+on personas.categoria_id=categorias.id
+//aqui se manda a llamar
+where titulo="familia";
+
+
+//como insertar datos
+//se inserta en tabla de categorias
+insert into categorias(titulo)values("Externos")
+
+//agregar otra personas
+//se inserta en la tabla personas, los valores que se requieren
+insert into personas(nombre, apellidos, telefono, email)values("Romero" "society", "1111111111", "romero@fsociety.com")
+
+
+
+//Para actualizar y cambiar los datos 
+
+update personas set nombre="Remero", apellidos="society", telefono="1111111111", email="romero@fsociety.com" where id="0"
+
+
+//Borrar datos
+//Importante colocar el id para no borrar toda la tabla de personas
+delete from personas where id=4
