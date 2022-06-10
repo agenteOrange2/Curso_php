@@ -50,3 +50,5 @@ echo "<br/>";
 
 //tambien se puede poner 
 echo sizeof($bandas);
+
+echo"hola";
