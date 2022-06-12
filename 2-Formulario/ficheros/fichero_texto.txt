@@ -1,0 +1,16 @@
+Hola, soy un archivo de prueba
+
+soy una segunda linea
+
+12341456    
+456
+456
+456
+46
+54
+***Soy un texto metido desde php*******Soy un texto metido desde php*******Soy un texto metido desde php****
+
+
+Mi gatito es la mas hermosa del mundo aun que huele a colita***Soy un texto metido desde php****
+
+Me gusta verla cuando se rie o molestarla***Soy un texto metido desde php****
