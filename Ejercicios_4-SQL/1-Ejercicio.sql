@@ -2,6 +2,9 @@
 Diseñar base de datos
 */
 
+CREATE DATABASE IF NOT EXISTS concesionario;
+USE concesionario;
+
 /*CREANDO TABLAS*/
 
 CREATE TABLE coches(
