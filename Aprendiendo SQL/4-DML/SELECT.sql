@@ -128,4 +128,3 @@ SELECT DISTINCT DATABASE() FROM usuarios;
 SELECT IFNULL(apellidos, 'Este campo esta vacio') FROM usuarios;
 /*agregando la columna de email*/
 SELECT email, IFNULL(apellidos, 'Este campo esta vacio') FROM usuarios;
-
