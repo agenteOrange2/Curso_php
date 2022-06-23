@@ -118,9 +118,5 @@ INSERT INTO encargos VALUES(NULL, 3, 3, 1, CURDATE());
 INSERT INTO encargos VALUES(NULL, 4, 3, 3, CURDATE());
 INSERT INTO encargos VALUES(NULL, 5, 5, 1, CURDATE());
 INSERT INTO encargos VALUES(NULL, 6, 6, 1, CURDATE());
+INSERT INTO encargos VALUES(NULL, 4, 4, 3, CURDATE());
 
-
-
-
-
-holaÑ
