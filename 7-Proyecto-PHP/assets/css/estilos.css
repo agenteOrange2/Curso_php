@@ -24,6 +24,7 @@ body{
 }
 
 
+
 /* Estilos de cabecera */
 
 #cabecera{
@@ -152,6 +153,20 @@ input[type="password"]{
     margin-bottom: 10px;
 }
 
+.alerta{
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: green;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+
+.alerta-error{
+    background-color: red;
+}
 input[type="button"],
 input[type="submit"]{
     margin-top: 5px;
