@@ -1,16 +1,35 @@
-<?php require_once 'includes/helpers.php'?>
 <!-- Sidebar -->
 <aside id="sidebar">
 
+        <!-- Login -->
+    <?php if (isset($_SESSION['usuario'])) :?>
+        <div class="bloque" id="usuario-logueado">
+            <h3>Bienvenido <?= $_SESSION['usuario']['nombre'].' '.$_SESSION['usuario']['apellidos']; ?></h3>
 
-    <?php if(isset($_SESSION['usuario'])) :?>
-    <div id="usuario-logueado" class="bloque">
-        <h3>Bienvenid@ <?php $_SESSION['usuario']['nombre'].' '.$_SESSION['usuario']['apellidos'];  ?></h3>
-    </div>
-    <?php endif; ?>
+            <!-- Botones -->
+            <a href="cerrar.php" class="boton boton-verde">Crear entradas</a>
+            <a href="crear-categoria.php" class="boton">Crear categorias</a>
+            <a href="cerrar.php" class="boton boton-naranja">Mis datos</a>
+            <a href="cerrar.php" class="boton boton-rojo">Cerrar sesion</a>
+
+            
+        </div>
+    <?php endif;?>
+    
+    
+    <!-- Condicion para ocultar login y registro al iniciar sesion -->
+
+    <?php if (!isset($_SESSION['usuario'])) :?>
 
     <div id="login" class="bloque">
         <h3>Identificate</h3>
+        <!-- Mostrar alerta para el error  -->
+        <?php if (isset($_SESSION['error_login'])) :?>
+        <div class="alerta alerta-error" >
+            <?=$_SESSION['error_login'];?>
+        </div>
+    <?php endif;?>
+
         <form action="login.php" method="POST">
             <label for="email">Email</label>
             <input type="email" name="email">
@@ -55,4 +74,6 @@
         </form>
         <?php borrarErrores(); ?>
     </div>
+
+    <?php endif;?><!-- Cierre Condicion para ocultar login y registro al iniciar sesion -->
 </aside>

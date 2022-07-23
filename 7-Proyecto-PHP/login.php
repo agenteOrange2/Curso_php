@@ -5,10 +5,13 @@ require_once 'includes/conexion.php';
 // Recoger datos del formulario
 if(isset($_POST)){
 	
-	// Borrar error antiguo
-	if(isset($_SESSION['error_login'])){
+	//Borrar error
+	//Nota deshabil
+	
+	if (isset($_SESSION['error_login'])) {
 		session_unset($_SESSION['error_login']);
 	}
+
 			
 	// Recoger datos del formulario
 	$email = trim($_POST['email']);

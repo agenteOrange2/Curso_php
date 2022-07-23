@@ -23,8 +23,6 @@ if (isset($_POST)) {
 
 
     //Validar los datos antes de guardarlos en la base de datos
-
-
     //Validando el campo nombre
     if (!empty($nombre) && !is_numeric($nombre) && !preg_match("/[0-9]/", $nombre)) {
         $nombre_validate = true;

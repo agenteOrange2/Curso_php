@@ -111,6 +111,12 @@ body{
 
 }
 
+.fecha{
+    color: #4e4e4e;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
 /* Barra lateral */
 #sidebar{
   
@@ -167,8 +173,12 @@ input[type="password"]{
 .alerta-error{
     background-color: red;
 }
+
+
+
 input[type="button"],
-input[type="submit"]{
+input[type="submit"],
+.boton{
     margin-top: 5px;
     margin-bottom: 5px;
     display: block;
@@ -180,7 +190,23 @@ input[type="submit"]{
     padding: 7px;
     }
 
+    .boton{
+        text-align: center;
+        width: 135px;
+    }
 
+    .boton-naranja{
+        background-color: orange;
+        border-color: #bd7d08;
+    }
+    .boton-verde{
+        background-color: #21b921;
+        border-color: green;
+    }
+    .boton-rojo{
+        background-color: rgb(204, 79, 79);
+        border-color: red;
+    }
 #principal{
  
     width: 65%;
@@ -228,6 +254,7 @@ input[type="submit"]{
 }
 
 #pie{
+    bottom: 0;
     width: 85%;
     margin: 0 auto;
     background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
